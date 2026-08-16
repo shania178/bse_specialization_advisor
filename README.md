@@ -88,6 +88,21 @@ python3 -m http.server 8000
 
 ---
 
+## Deploying to GitHub Pages
+
+The project is pure static HTML/CSS/JS, so it deploys directly from the
+repository `main` branch:
+
+1. Make sure the repository
+   `github.com/shania178/bse_specialization_advisor` is set to **Public**
+   (Repository → Settings → General → Danger Zone → Change visibility).
+2. Repository → **Settings** → **Pages** → Source: **Deploy from a branch** →
+   branch `main` / `(root)` → **Save**.
+3. The site is published at:
+   `https://shania178.github.io/bse_specialization_advisor/`
+
+---
+
 ## Asset generation notes
 
 - `assets/audio-prompt.wav` — generated with a small Python script using only
