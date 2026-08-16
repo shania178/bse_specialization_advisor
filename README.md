@@ -11,23 +11,22 @@ and discover which of four specialisations fits them best:
 | **Full-Stack Web** | Front-end, back-end, APIs, cloud, shipping products |
 | **Machine Learning** | Models, data pipelines, prediction, intelligent systems |
 
-Built with **pure HTML5, CSS3 and ES6+ JavaScript** — no frameworks, no
+Built with **pure HTML5, CSS3 and ES6+ JavaScript** — no frameworks and no
 external libraries (not even for the Canvas chart).
 
 ---
 
-## Features (mapped to assessment requirements)
+## Features
 
 - **Four-page structure** — Landing, Quiz, Results, Contact.
 - **Real-time inline validation** — custom regex patterns for names, student
-  IDs, institutional emails (`@alustudent.com`) and Mauritian phone numbers, with
-  `.is-valid` / `.is-invalid` visual states and `.error-message` elements below
-  each field. No `alert()` popups anywhere.
+  IDs, institutional emails (`@alustudent.com`) and Mauritian phone numbers,
+  with `.is-valid` / `.is-invalid` visual states and `.error-message` elements
+  below each field. No `alert()` popups anywhere.
 - **Interactive media (all three types):**
-  - **Image hotspots** — Q5 uses an SVG "tech hub" scene with clickable
-    regions.
+  - **Image hotspots** — Q5 uses an SVG "tech hub" scene with clickable regions.
   - **Audio question** — Q6 uses an HTML5 `<audio>` prompt with custom
-    play / pause / replay controls (asset generated in pure Python).
+    play / pause / replay controls.
   - **Video scenario** — Q7 embeds an HTML5 `<video>` that auto-pauses at a
     pre-programmed timestamp via a `timeupdate` listener, prompting a decision
     before the student may continue.
@@ -50,7 +49,7 @@ external libraries (not even for the Canvas chart).
 | Landing | `index.html` | Intro + student details form (live validation) |
 | Quiz | `quiz.html` | 10 questions, timer, media, scoring engine |
 | Results | `results.html` | Profile outcome, score bars, Canvas radar chart, recommendations |
-| Contact | `contact.html` | Author details, GitHub links, feedback form |
+| Contact | `contact.html` | Author details, project links, feedback form |
 
 ---
 
@@ -71,31 +70,21 @@ external libraries (not even for the Canvas chart).
 │   ├── results.js          # Canvas radar chart + narrative + confetti
 │   └── contact.js          # Contact form + star rating
 ├── assets/
-│   ├── audio-prompt.wav    # Generated retro-tech audio clip (Python stdlib)
-│   └── video-scenario.webm # Generated 12s scenario clip (GStreamer, VP8/Opus)
+│   ├── audio-prompt.wav    # Generated retro-tech audio clip
+│   └── video-scenario.webm # Generated scenario clip (VP8/Opus)
 └── README.md
 ```
+
+---
 
 ## Running locally
 
 No build step or dependencies. Serve the folder with any static server, e.g.:
 
 ```bash
-# Python
 python3 -m http.server 8000
 # then open http://localhost:8000
 ```
-
-Or open `index.html` directly in a browser (storage still works in a single
-session; a server is cleaner for paths).
-
-## Deploying to GitHub Pages
-
-1. Create a new public repository on GitHub.
-2. Push this folder to the repository's `main` branch.
-3. Repository → **Settings** → **Pages** → Source: **Deploy from a branch** →
-   branch `main` / `/ (root)` → Save.
-4. Your site is live at `https://<username>.github.io/<repository>/`.
 
 ---
 
@@ -103,9 +92,9 @@ session; a server is cleaner for paths).
 
 - `assets/audio-prompt.wav` — generated with a small Python script using only
   the standard library `wave` module (sine/square tone synthesis).
-- `assets/video-scenario.webm` — generated with `gst-launch-1.0`
-  (GStreamer): `videotestsrc pattern=ball` + `textoverlay` + `vp8enc` +
-  `opusenc`, muxed into WebM.
+- `assets/video-scenario.webm` — generated with `gst-launch-1.0` (GStreamer):
+  `videotestsrc pattern=ball` + `textoverlay` + `vp8enc` + `opusenc`, muxed
+  into WebM.
 
 The scripts are included below so the media can be reproduced:
 
@@ -153,13 +142,11 @@ gst-launch-1.0 -e videotestsrc pattern=ball num-buffers=360 ! videoconvert ! vid
 
 </details>
 
-## Sources & attribution
+---
 
-All code is original. Media assets were generated programmatically for this
-project (see above) so they are free of copyright. Replace the placeholder
-GitHub URL and author details on the **Contact** page with your own before
-submission.
+## Author
 
-> If you adapt any code from online sources, credit it here with the URL, and
-> document any AI assistance in your *Sources, Credits & AI Transparency* PDF
-> (APA 7th edition) as required by the assignment brief.
+**Bibi Shania Tinkouree** — BSc (Hons) Software Engineering, Year 1
+(b.tinkouree@alustudent.com)
+
+Project repository: [github.com/shania178/bse_specialization_advisor](https://github.com/shania178/bse_specialization_advisor)
