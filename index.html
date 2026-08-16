@@ -106,10 +106,18 @@
           <form id="landing-form" novalidate>
             <div class="form-grid">
               <div class="field">
-                <label for="f-name">Full name <span class="req" aria-hidden="true">*</span></label>
-                <input id="f-name" name="name" data-validate="name" type="text"
-                       placeholder="e.g. Aisha Bello" autocomplete="name" required>
-                <small class="error-message" id="name-error" aria-live="polite"></small>
+                <label for="f-fname">First name <span class="req" aria-hidden="true">*</span></label>
+                <input id="f-fname" name="firstName" data-validate="name" type="text"
+                       placeholder="e.g. Aisha" autocomplete="given-name" required>
+                <small class="error-message" id="fname-error" aria-live="polite"></small>
+                <small class="valid-hint" aria-hidden="true">Looks good!</small>
+              </div>
+
+              <div class="field">
+                <label for="f-lname">Last name <span class="req" aria-hidden="true">*</span></label>
+                <input id="f-lname" name="lastName" data-validate="name" type="text"
+                       placeholder="e.g. Bello" autocomplete="family-name" required>
+                <small class="error-message" id="lname-error" aria-live="polite"></small>
                 <small class="valid-hint" aria-hidden="true">Looks good!</small>
               </div>
 
@@ -124,7 +132,7 @@
               <div class="field field--full">
                 <label for="f-email">Institutional email <span class="req" aria-hidden="true">*</span></label>
                 <input id="f-email" name="email" data-validate="email" type="email"
-                       placeholder="e.g. student.id@bse.ac.mu" autocomplete="email" required>
+                       placeholder="e.g. student.id@alustudent.com" autocomplete="email" required>
                 <small class="error-message" id="email-error" aria-live="polite"></small>
                 <small class="valid-hint" aria-hidden="true">Institutional address confirmed.</small>
               </div>
@@ -141,9 +149,9 @@
                 <label for="f-prog">Intake level <span class="req" aria-hidden="true">*</span></label>
                 <select id="f-prog" name="programme" required>
                   <option value="">Select...</option>
-                  <option value="bse-y1">BSE Year 1</option>
-                  <option value="bse-y2">BSE Year 2</option>
-                  <option value="transfer">Transfer student</option>
+                  <option value="year1">Year 1</option>
+                  <option value="year2">Year 2</option>
+                  <option value="year3">Year 3</option>
                 </select>
                 <small class="error-message" id="prog-error" aria-live="polite">Please choose your intake level.</small>
               </div>

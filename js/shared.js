@@ -40,10 +40,10 @@ const RULES = {
   },
 
   /* Institutional email: local part is alphanumeric + . _ - separators,
-     domain must be bse.ac.mu (student.id@bse.ac.mu format). */
+     domain must be alustudent.com (student.id@alustudent.com format). */
   email: {
-    regex: /^[a-z0-9]+(?:[._-][a-z0-9]+)*@bse\.ac\.mu$/i,
-    message: "Use your institutional address, e.g. student.id@bse.ac.mu."
+    regex: /^[a-z0-9]+(?:[._-][a-z0-9]+)*@alustudent\.com$/i,
+    message: "Use your institutional address, e.g. student.id@alustudent.com."
   },
 
   /* Phone: optional +230 (or 230) country code + 8 local digits.

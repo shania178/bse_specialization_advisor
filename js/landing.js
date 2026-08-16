@@ -42,9 +42,15 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    /* Persist profile so quiz.html and results.html can greet the student. */
+    /* Persist profile so quiz.html and results.html can greet the student.
+       First + last name are stored separately, plus a combined "name" used
+       for greeting text across the app. */
+    const firstName = document.getElementById("f-fname").value.trim();
+    const lastName = document.getElementById("f-lname").value.trim();
     window.Student.saveStudent({
-      name: document.getElementById("f-name").value.trim(),
+      firstName,
+      lastName,
+      name: `${firstName} ${lastName}`,
       studentId: document.getElementById("f-id").value.trim(),
       email: document.getElementById("f-email").value.trim().toLowerCase(),
       phone: document.getElementById("f-phone").value.trim(),

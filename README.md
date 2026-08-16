@@ -20,7 +20,7 @@ external libraries (not even for the Canvas chart).
 
 - **Four-page structure** — Landing, Quiz, Results, Contact.
 - **Real-time inline validation** — custom regex patterns for names, student
-  IDs, institutional emails (`@bse.ac.mu`) and Mauritian phone numbers, with
+  IDs, institutional emails (`@alustudent.com`) and Mauritian phone numbers, with
   `.is-valid` / `.is-invalid` visual states and `.error-message` elements below
   each field. No `alert()` popups anywhere.
 - **Interactive media (all three types):**
