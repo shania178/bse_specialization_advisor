@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BSE Specialisation Advisor — your personalised results.">
+  <title>BSE Specialisation Advisor | Results</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="results">
+
+  <!-- ============ HEADER / NAVIGATION ============ -->
+  <header class="site-nav">
+    <div class="container">
+      <a href="index.html" class="brand">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="2" y="2" width="20" height="20" rx="3"/>
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M9.5 9.5 12 6l2.5 3.5L12 12z"/>
+        </svg>
+        <span>BSE Advisor<small>Learning Journey Planner</small></span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <path d="M4 7h16M4 12h16M4 17h16"/>
+        </svg>
+      </button>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" data-page="landing">Home</a></li>
+          <li><a href="quiz.html" data-page="quiz">Quiz</a></li>
+          <li><a href="results.html" data-page="results">Results</a></li>
+          <li><a href="contact.html" data-page="contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- The JS fills this whole results region from sessionStorage data. -->
+    <div id="results-root">
+      <section class="section">
+        <div class="container">
+          <div class="page-head">
+            <h1>Calculating your profile...</h1>
+            <p>Please wait a moment.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <span>BSE Specialisation Advisor — client-side coursework project.</span>
+      <span><a href="https://github.com/" target="_blank" rel="noopener">GitHub repository</a></span>
+    </div>
+  </footer>
+
+  <script src="js/shared.js"></script>
+  <script src="js/results.js"></script>
+</body>
+</html>

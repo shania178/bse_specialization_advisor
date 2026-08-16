@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BSE Specialisation Advisor — interactive quiz.">
+  <title>BSE Specialisation Advisor | Quiz</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="quiz">
+
+  <!-- ============ HEADER / NAVIGATION ============ -->
+  <header class="site-nav">
+    <div class="container">
+      <a href="index.html" class="brand">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="2" y="2" width="20" height="20" rx="3"/>
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M9.5 9.5 12 6l2.5 3.5L12 12z"/>
+        </svg>
+        <span>BSE Advisor<small>Learning Journey Planner</small></span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <path d="M4 7h16M4 12h16M4 17h16"/>
+        </svg>
+      </button>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" data-page="landing">Home</a></li>
+          <li><a href="quiz.html" data-page="quiz">Quiz</a></li>
+          <li><a href="results.html" data-page="results">Results</a></li>
+          <li><a href="contact.html" data-page="contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container quiz-shell">
+
+        <!-- Student greeting (filled by JS from sessionStorage) -->
+        <p id="quiz-greet" style="margin-bottom: .9rem; font-weight: 700; color: var(--muted);"></p>
+
+        <!-- ============ PROGRESS + COUNTER + LIVE TIMER ============ -->
+        <div class="quiz-topbar">
+          <div class="progress-track" role="progressbar" aria-label="Quiz progress">
+            <div id="progress-fill" class="progress-fill"></div>
+          </div>
+          <span id="q-counter" class="q-counter">Question 1 / 10</span>
+          <!-- Timer badge; JS adds .danger under 30s (pulse + red) -->
+          <span id="timer-badge" class="timer-badge" aria-live="polite">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="13" r="8"/>
+              <path d="M12 9v4l2.5 2.5M9 2h6"/>
+            </svg>
+            <span id="timer-text">05:00</span>
+          </span>
+        </div>
+
+        <!-- Question card — its inner HTML is rebuilt by js/quiz.js each question -->
+        <div id="quiz-card" class="quiz-card" aria-live="polite"></div>
+
+        <!-- ============ TIMEOUT LOCK SCREEN ============ -->
+        <div id="lock-screen" class="quiz-lock-screen" role="dialog" aria-labelledby="lock-title">
+          <div>
+            <h2 id="lock-title">Time's up!</h2>
+            <p>Your current answers have been recorded. Redirecting to your results...</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <span>BSE Specialisation Advisor — client-side coursework project.</span>
+      <span><a href="https://github.com/" target="_blank" rel="noopener">GitHub repository</a></span>
+    </div>
+  </footer>
+
+  <!-- =====================================================================
+       IMAGE HOTSPOT SCENE TEMPLATE
+       A hand-drawn SVG "tech hub" scene. Four hotspot circles are layered
+       over the objects; clicking one records the matching specialisation.
+       The <template> element keeps markup in HTML and logic in JS.
+       ===================================================================== -->
+  <template id="hotspot-scene">
+    <div class="hotspot-stage">
+      <svg viewBox="0 0 800 460" xmlns="http://www.w3.org/2000/svg" role="img"
+           aria-label="Illustration of a tech hub: circuit board, laptop, VR headset and robot">
+        <defs>
+          <linearGradient id="room" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#eef1fb"/>
+            <stop offset="1" stop-color="#d9e2f1"/>
+          </linearGradient>
+        </defs>
+
+        <!-- Room background -->
+        <rect class="scene-bg" width="800" height="460" fill="url(#room)"/>
+
+        <!-- Desk surface + front panel -->
+        <rect class="scene-bg" x="20" y="278" width="760" height="22" fill="#c9d3e4"/>
+        <rect class="scene-bg" x="20" y="300" width="760" height="160" fill="#b3c0d6"/>
+
+        <!-- CIRCUIT BOARD (Low-Level) -->
+        <g class="scene-bg">
+          <rect x="58" y="188" width="128" height="92" rx="8" fill="#1f7a5a"/>
+          <rect x="70" y="200" width="104" height="68" rx="4" fill="#2e9c74"/>
+          <!-- circuit traces -->
+          <path d="M90 230h20M90 240h16M110 250h14M128 230h14" stroke="#f6d365" stroke-width="3" fill="none"/>
+          <circle cx="86" cy="236" r="3" fill="#f6d365"/>
+          <circle cx="146" cy="236" r="3" fill="#f6d365"/>
+          <!-- chip -->
+          <rect x="94" y="252" width="44" height="30" rx="3" fill="#20242c"/>
+          <rect x="102" y="260" width="28" height="14" rx="1" fill="#39414f"/>
+          <path d="M104 252v-6M116 252v-6M128 252v-6" stroke="#20242c" stroke-width="3"/>
+        </g>
+
+        <!-- LAPTOP / CODE (Full-Stack Web) -->
+        <g class="scene-bg">
+          <rect x="352" y="96" width="196" height="132" rx="10" fill="#20242c"/>
+          <rect x="360" y="104" width="180" height="116" rx="6" fill="#0f172a"/>
+          <!-- code lines -->
+          <rect x="374" y="122" width="90" height="7" rx="3" fill="#22d3ee"/>
+          <rect x="374" y="140" width="60" height="7" rx="3" fill="#a78bfa"/>
+          <rect x="390" y="158" width="80" height="7" rx="3" fill="#34d399"/>
+          <rect x="390" y="176" width="48" height="7" rx="3" fill="#a78bfa"/>
+          <rect x="374" y="194" width="70" height="7" rx="3" fill="#22d3ee"/>
+          <rect x="420" y="228" width="60" height="8" rx="3" fill="#20242c"/>
+          <rect x="404" y="236" width="92" height="10" rx="4" fill="#20242c"/>
+        </g>
+
+        <!-- VR HEADSET (AR/VR) -->
+        <g class="scene-bg">
+          <rect x="566" y="120" width="118" height="66" rx="26" fill="#4c1d95"/>
+          <rect x="582" y="134" width="34" height="38" rx="10" fill="#0d0b1a"/>
+          <rect x="634" y="134" width="34" height="38" rx="10" fill="#0d0b1a"/>
+          <path d="M566 138h-26M684 138h26" stroke="#7c3aed" stroke-width="8" fill="none"/>
+          <circle cx="599" cy="153" r="7" fill="#22d3ee" opacity=".8"/>
+          <circle cx="651" cy="153" r="7" fill="#f472b6" opacity=".8"/>
+        </g>
+
+        <!-- ROBOT (Machine Learning) -->
+        <g class="scene-bg">
+          <rect x="614" y="222" width="72" height="56" rx="12" fill="#e5e7eb"/>
+          <rect x="622" y="230" width="56" height="16" rx="8" fill="#374151"/>
+          <circle cx="636" cy="246" r="5" fill="#ef4444"/>
+          <circle cx="664" cy="246" r="5" fill="#22d3ee"/>
+          <rect x="630" y="262" width="40" height="16" rx="4" fill="#9ca3af"/>
+          <path d="M650 250v24M640 262h20" stroke="#6b7280" stroke-width="3" fill="none"/>
+          <rect x="646" y="212" width="8" height="12" rx="2" fill="#f59e0b"/>
+          <circle cx="650" cy="210" r="6" fill="#f59e0b"/>
+        </g>
+
+        <!-- Labels -->
+        <g class="scene-bg" font-family="sans-serif" font-size="14" font-weight="700" fill="#334155">
+          <text x="78" y="180">Circuit</text>
+          <text x="396" y="90">Laptop</text>
+          <text x="580" y="112">VR</text>
+          <text x="634" y="206">Robot</text>
+        </g>
+
+        <!-- ============ INTERACTIVE HOTSPOTS (click targets) ============ -->
+        <!-- Each hotspot: a dashed ring + core dot that light up on hover/
+             selection, layered over the matching object. data-cat maps the
+             click to a specialisation category. -->
+        <g class="hotspot-region" data-cat="low" tabindex="0" role="button" aria-label="Circuit board (Low-Level)">
+          <circle class="core" cx="122" cy="234" r="10"/>
+          <circle class="ring" cx="122" cy="234" r="42"/>
+        </g>
+        <g class="hotspot-region" data-cat="web" tabindex="0" role="button" aria-label="Laptop with code (Full-Stack Web)">
+          <circle class="core" cx="450" cy="162" r="10"/>
+          <circle class="ring" cx="450" cy="162" r="42"/>
+        </g>
+        <g class="hotspot-region" data-cat="arvr" tabindex="0" role="button" aria-label="VR headset (AR/VR)">
+          <circle class="core" cx="625" cy="153" r="10"/>
+          <circle class="ring" cx="625" cy="153" r="42"/>
+        </g>
+        <g class="hotspot-region" data-cat="ml" tabindex="0" role="button" aria-label="Robot (Machine Learning)">
+          <circle class="core" cx="650" cy="250" r="10"/>
+          <circle class="ring" cx="650" cy="250" r="42"/>
+        </g>
+      </svg>
+    </div>
+    <!-- Confirm button appears once a hotspot is selected -->
+    <button id="hotspot-confirm" class="btn btn-primary hotspot-confirm" disabled>Confirm this choice</button>
+  </template>
+
+  <script src="js/shared.js"></script>
+  <script src="js/quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BSE Specialisation Advisor — author details and feedback form.">
+  <title>BSE Specialisation Advisor | Contact</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="contact">
+
+  <!-- ============ HEADER / NAVIGATION ============ -->
+  <header class="site-nav">
+    <div class="container">
+      <a href="index.html" class="brand">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="2" y="2" width="20" height="20" rx="3"/>
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M9.5 9.5 12 6l2.5 3.5L12 12z"/>
+        </svg>
+        <span>BSE Advisor<small>Learning Journey Planner</small></span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <path d="M4 7h16M4 12h16M4 17h16"/>
+        </svg>
+      </button>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" data-page="landing">Home</a></li>
+          <li><a href="quiz.html" data-page="quiz">Quiz</a></li>
+          <li><a href="results.html" data-page="results">Results</a></li>
+          <li><a href="contact.html" data-page="contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="page-head">
+          <h1>Contact &amp; Feedback</h1>
+          <p>Meet the author, explore the project source code, or share your thoughts on the tool.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- ============ AUTHOR CARD ============ -->
+          <div class="card">
+            <h2>About the author</h2>
+            <!-- TODO: replace these placeholders with your own details -->
+            <ul class="author-list">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                <span><strong>Student Name</strong> — BSE Year 1</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6L22 7"/></svg>
+                <a href="mailto:student.id@bse.ac.mu">student.id@bse.ac.mu</a>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.6 2.8 5.5 3.1 5.5 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>
+                <a href="https://github.com/" target="_blank" rel="noopener">github.com/yourusername/bse-specialisation-advisor</a>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V2H6.5A2.5 2.5 0 0 0 4 4.5v15z"/><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5"/></svg>
+                <span>Built with pure HTML5, CSS3 &amp; ES6+ JavaScript</span>
+              </li>
+            </ul>
+
+            <hr style="border:none;border-top:1px solid var(--line);margin:1.2rem 0;">
+
+            <h2>Project links</h2>
+            <div style="display:flex;gap:.7rem;flex-wrap:wrap;margin-top:.8rem;">
+              <a class="btn btn-ghost" href="https://github.com/" target="_blank" rel="noopener">Source code</a>
+              <a class="btn btn-ghost" href="https://github.com/" target="_blank" rel="noopener">Issues</a>
+            </div>
+          </div>
+
+          <!-- ============ FEEDBACK FORM ============ -->
+          <div class="card">
+            <h2>Send feedback</h2>
+            <p style="color:var(--muted);margin:.3rem 0 1.2rem;">Fields validate in real time, just like the landing page.</p>
+
+            <!-- Success banner (hidden until a valid submit) -->
+            <div id="contact-success" class="success-banner" role="status">
+              Thanks! Your feedback has been recorded (demo — no server involved).
+            </div>
+
+            <!-- Validated live by js/contact.js via data-validate attributes -->
+            <form id="contact-form" novalidate>
+              <div class="form-grid">
+                <div class="field">
+                  <label for="c-name">Name <span class="req" aria-hidden="true">*</span></label>
+                  <input id="c-name" name="name" data-validate="name" type="text"
+                         placeholder="Your full name" autocomplete="name" required>
+                  <small class="error-message" id="c-name-error" aria-live="polite"></small>
+                  <small class="valid-hint" aria-hidden="true">Thanks!</small>
+                </div>
+
+                <div class="field">
+                  <label for="c-email">Email <span class="req" aria-hidden="true">*</span></label>
+                  <input id="c-email" name="email" data-validate="email" type="email"
+                         placeholder="student.id@bse.ac.mu" autocomplete="email" required>
+                  <small class="error-message" id="c-email-error" aria-live="polite"></small>
+                  <small class="valid-hint" aria-hidden="true">Institutional address confirmed.</small>
+                </div>
+
+                <div class="field">
+                  <label for="c-subject">Subject <span class="req" aria-hidden="true">*</span></label>
+                  <select id="c-subject" name="subject" data-validate="subject" required>
+                    <option value="">Select a topic...</option>
+                    <option value="bug">Bug report</option>
+                    <option value="idea">Suggestion / feature idea</option>
+                    <option value="question">Question about my results</option>
+                    <option value="other">Something else</option>
+                  </select>
+                  <small class="error-message" id="c-subject-error" aria-live="polite">Please choose a subject.</small>
+                </div>
+
+                <!-- Interactive star rating (JS handles hover + click) -->
+                <div class="field">
+                  <label>How helpful was the tool? <span class="req" aria-hidden="true">*</span></label>
+                  <div class="stars" id="stars" role="radiogroup" aria-label="Rating">
+                    <!-- Star buttons 1..5; JS sets the .on class and value -->
+                  </div>
+                  <small class="error-message" id="c-rating-error" aria-live="polite">Please tap a star to rate the tool.</small>
+                </div>
+
+                <div class="field field--full">
+                  <label for="c-message">Message <span class="req" aria-hidden="true">*</span></label>
+                  <textarea id="c-message" name="message" data-validate="message" rows="5"
+                            placeholder="Tell us what you liked, what confused you, or what you'd change..." required></textarea>
+                  <small class="error-message" id="c-message-error" aria-live="polite"></small>
+                  <small class="valid-hint" aria-hidden="true">Great — that's detailed enough.</small>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" style="margin-top:1.1rem;">Send feedback</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <span>BSE Specialisation Advisor — client-side coursework project.</span>
+      <span><a href="https://github.com/" target="_blank" rel="noopener">GitHub repository</a></span>
+    </div>
+  </footer>
+
+  <script src="js/shared.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BSE Specialisation Advisor — help incoming students discover their ideal BSE specialisation.">
+  <title>BSE Specialisation Advisor | Home</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="landing">
+
+  <!-- ============ HEADER / NAVIGATION ============ -->
+  <header class="site-nav">
+    <div class="container">
+      <a href="index.html" class="brand">
+        <!-- Inline SVG logo: compass inside a chip -->
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="2" y="2" width="20" height="20" rx="3"/>
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M9.5 9.5 12 6l2.5 3.5L12 12z"/>
+        </svg>
+        <span>BSE Advisor<small>Learning Journey Planner</small></span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <path d="M4 7h16M4 12h16M4 17h16"/>
+        </svg>
+      </button>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" data-page="landing">Home</a></li>
+          <li><a href="quiz.html" data-page="quiz">Quiz</a></li>
+          <li><a href="results.html" data-page="results">Results</a></li>
+          <li><a href="contact.html" data-page="contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero hero-glow">
+      <div class="container">
+        <h1>Find your path in <span class="grad">BSE</span>.</h1>
+        <p class="subtitle">
+          You've just joined the Bachelor of Software Engineering at BSE.
+          Answer 10 quick questions and discover which specialisation fits your
+          strengths, interests and goals — Low-Level Programming, AR/VR,
+          Full-Stack Web Development or Machine Learning.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ SPECIALISATION PREVIEW CARDS ============ -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container stagger">
+        <div class="cat-grid">
+          <article class="card card-lift cat-card" style="--cat: var(--c-low)">
+            <span class="icon" style="background: var(--c-low)">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9h.01M15 9h.01M7 15h10"/></svg>
+            </span>
+            <h3>Low-Level Programming</h3>
+            <p>Systems, memory, performance and close-to-hardware engineering.</p>
+          </article>
+
+          <article class="card card-lift cat-card" style="--cat: var(--c-arvr)">
+            <span class="icon" style="background: var(--c-arvr)">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="8" width="20" height="8" rx="3"/><path d="M7 12h.01M12 12h.01M17 12h.01"/></svg>
+            </span>
+            <h3>AR / VR</h3>
+            <p>Immersive 3D experiences, spatial computing and real-time rendering.</p>
+          </article>
+
+          <article class="card card-lift cat-card" style="--cat: var(--c-web)">
+            <span class="icon" style="background: var(--c-web)">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 8 4 12l4 4M16 8l4 4-4 4M13 5l-2 14"/></svg>
+            </span>
+            <h3>Full-Stack Web</h3>
+            <p>Front-end, back-end, APIs and shipping products people use daily.</p>
+          </article>
+
+          <article class="card card-lift cat-card" style="--cat: var(--c-ml)">
+            <span class="icon" style="background: var(--c-ml)">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9 17 7M7 17l-2.1 2.1"/></svg>
+            </span>
+            <h3>Machine Learning</h3>
+            <p>Models, data pipelines, prediction and intelligent systems.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STUDENT DETAILS FORM ============ -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container" style="max-width: 640px;">
+        <div class="card">
+          <h2>Before we begin</h2>
+          <p style="color: var(--muted); margin-bottom: 1.2rem;">
+            Tell us who you are. Fields validate in real time — a green tick
+            means we're happy with your answer.
+          </p>
+
+          <!-- The form is validated live by js/shared.js via data-validate attributes -->
+          <form id="landing-form" novalidate>
+            <div class="form-grid">
+              <div class="field">
+                <label for="f-name">Full name <span class="req" aria-hidden="true">*</span></label>
+                <input id="f-name" name="name" data-validate="name" type="text"
+                       placeholder="e.g. Aisha Bello" autocomplete="name" required>
+                <small class="error-message" id="name-error" aria-live="polite"></small>
+                <small class="valid-hint" aria-hidden="true">Looks good!</small>
+              </div>
+
+              <div class="field">
+                <label for="f-id">Student ID <span class="req" aria-hidden="true">*</span></label>
+                <input id="f-id" name="studentId" data-validate="studentId" type="text"
+                       placeholder="e.g. BSE25013" autocomplete="off" required>
+                <small class="error-message" id="id-error" aria-live="polite"></small>
+                <small class="valid-hint" aria-hidden="true">ID format accepted.</small>
+              </div>
+
+              <div class="field field--full">
+                <label for="f-email">Institutional email <span class="req" aria-hidden="true">*</span></label>
+                <input id="f-email" name="email" data-validate="email" type="email"
+                       placeholder="e.g. student.id@bse.ac.mu" autocomplete="email" required>
+                <small class="error-message" id="email-error" aria-live="polite"></small>
+                <small class="valid-hint" aria-hidden="true">Institutional address confirmed.</small>
+              </div>
+
+              <div class="field">
+                <label for="f-phone">Phone number <span class="req" aria-hidden="true">*</span></label>
+                <input id="f-phone" name="phone" data-validate="phone" type="tel"
+                       placeholder="e.g. +23058123456" autocomplete="tel" required>
+                <small class="error-message" id="phone-error" aria-live="polite"></small>
+                <small class="valid-hint" aria-hidden="true">Number format accepted.</small>
+              </div>
+
+              <div class="field">
+                <label for="f-prog">Intake level <span class="req" aria-hidden="true">*</span></label>
+                <select id="f-prog" name="programme" required>
+                  <option value="">Select...</option>
+                  <option value="bse-y1">BSE Year 1</option>
+                  <option value="bse-y2">BSE Year 2</option>
+                  <option value="transfer">Transfer student</option>
+                </select>
+                <small class="error-message" id="prog-error" aria-live="polite">Please choose your intake level.</small>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block" style="margin-top: 1.2rem;">
+              Start the assessment
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <span>BSE Specialisation Advisor — client-side coursework project.</span>
+      <span><a href="https://github.com/" target="_blank" rel="noopener">GitHub repository</a></span>
+    </div>
+  </footer>
+
+  <script src="js/shared.js"></script>
+  <script src="js/landing.js"></script>
+</body>
+</html>
