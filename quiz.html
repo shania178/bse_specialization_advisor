@@ -167,22 +167,27 @@
         </g>
 
         <!-- ============ INTERACTIVE HOTSPOTS (click targets) ============ -->
-        <!-- Each hotspot: a dashed ring + core dot that light up on hover/
-             selection, layered over the matching object. data-cat maps the
-             click to a specialisation category. -->
+        <!-- Each hotspot: an invisible 72px hit circle (so the whole object
+             is clickable, not just the small dot/ring), a dashed ring + core
+             dot that light up on hover/selection. data-cat maps the click to
+             a specialisation category. -->
         <g class="hotspot-region" data-cat="low" tabindex="0" role="button" aria-label="Circuit board (Low-Level)">
+          <circle class="hit" cx="122" cy="234" r="72"/>
           <circle class="core" cx="122" cy="234" r="10"/>
           <circle class="ring" cx="122" cy="234" r="42"/>
         </g>
         <g class="hotspot-region" data-cat="web" tabindex="0" role="button" aria-label="Laptop with code (Full-Stack Web)">
+          <circle class="hit" cx="450" cy="162" r="72"/>
           <circle class="core" cx="450" cy="162" r="10"/>
           <circle class="ring" cx="450" cy="162" r="42"/>
         </g>
         <g class="hotspot-region" data-cat="arvr" tabindex="0" role="button" aria-label="VR headset (AR/VR)">
+          <circle class="hit" cx="625" cy="153" r="72"/>
           <circle class="core" cx="625" cy="153" r="10"/>
           <circle class="ring" cx="625" cy="153" r="42"/>
         </g>
         <g class="hotspot-region" data-cat="ml" tabindex="0" role="button" aria-label="Robot (Machine Learning)">
+          <circle class="hit" cx="650" cy="250" r="72"/>
           <circle class="core" cx="650" cy="250" r="10"/>
           <circle class="ring" cx="650" cy="250" r="42"/>
         </g>

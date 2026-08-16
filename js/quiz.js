@@ -350,14 +350,17 @@ function renderHotspot(q) {
   const clone = els.hotspotTemplate.content.cloneNode(true);
   const stage = clone.querySelector(".hotspot-stage");
   const confirmBtn = clone.querySelector("#hotspot-confirm");
+  /* Snapshot the regions BEFORE the clone is appended to the live DOM —
+     querySelectorAll on the fragment afterwards would return nothing. */
+  const regions = clone.querySelectorAll(".hotspot-region");
   let pendingCat = null;
 
   /* Wire every clickable region inside the cloned SVG. */
-  clone.querySelectorAll(".hotspot-region").forEach((region) => {
+  regions.forEach((region) => {
     const select = () => {
       if (state.answered || state.locked) return;
       /* Highlight only the selected region (remove .selected elsewhere). */
-      clone.querySelectorAll(".hotspot-region").forEach((r) => r.classList.remove("selected"));
+      regions.forEach((r) => r.classList.remove("selected"));
       region.classList.add("selected");
       pendingCat = region.getAttribute("data-cat");
       confirmBtn.disabled = false;

@@ -412,6 +412,10 @@ main { flex: 1 0 auto; }   /* pushes footer to bottom of viewport */
 .hotspot-stage svg .scene-bg { pointer-events: none; }
 /* Each hotspot is a transparent circle that grows + glows on hover */
 .hotspot-region { cursor: pointer; }
+/* Large invisible hit area: the whole object is clickable, not just the ring */
+.hotspot-region .hit { fill: transparent; pointer-events: visiblePainted; }
+.hotspot-region:focus-visible { outline: none; }
+.hotspot-region:focus-visible .ring { opacity: 1; transform: scale(1.6); }
 .hotspot-region .ring { fill: none; stroke: var(--primary); stroke-width: 3; opacity: 0; transition: opacity var(--trans), transform var(--trans); transform-origin: center; transform-box: fill-box; }
 .hotspot-region:hover .ring,
 .hotspot-region.selected .ring { opacity: 1; transform: scale(1.6); }
