@@ -149,6 +149,7 @@ const QUESTIONS = [
 const QUIZ_TIME = 300;              /* total quiz duration in seconds   */
 const VIDEO_PAUSE_AT = 5;           /* video timestamp (seconds) to halt */
 const BASE_POINTS = 10;             /* points awarded per answered question */
+const ANSWER_PAUSE = 1600;          /* ms to show the points toast before advancing */
 
 /* --------------------------------------------------------------------------
    STATE — single mutable object shared by all functions in this file.
@@ -277,11 +278,13 @@ function recordAnswer(cat) {
    -------------------------------------------------------------------------- */
 function showToast(detail) {
   els.card.querySelector(".answer-toast")?.remove();
+  clearTimeout(showToast._timer);
   const toast = document.createElement("div");
   toast.className = "answer-toast";
   toast.textContent =
     `+${detail.points} pts  •  speed bonus +${detail.bonus}  •  streak ×${detail.multiplier.toFixed(1)}`;
   els.card.appendChild(toast);
+  showToast._timer = setTimeout(() => toast.remove(), 3000);
 }
 
 /* --------------------------------------------------------------------------
@@ -322,8 +325,8 @@ function renderOptions(options, onPick) {
       const detail = recordAnswer(opt.cat);
       showToast(detail);
       onPick(opt, detail, btn);
-      /* Brief pause lets the selection animation show before advancing. */
-      setTimeout(advance, 500);
+      /* Pause lets the selection animation + points toast be read. */
+      setTimeout(advance, ANSWER_PAUSE);
     });
     wrap.appendChild(btn);
   });
@@ -375,7 +378,7 @@ function renderHotspot(q) {
     const detail = recordAnswer(pendingCat);
     showToast(detail);
     confirmBtn.textContent = `+${detail.points} pts for ${CATEGORIES[pendingCat].label}`;
-    setTimeout(advance, 600);
+    setTimeout(advance, ANSWER_PAUSE);
   });
 
   /* Confirm button keeps its id so it can be styled from CSS. */

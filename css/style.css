@@ -390,7 +390,9 @@ main { flex: 1 0 auto; }   /* pushes footer to bottom of viewport */
 .player-bar { display: flex; gap: .5rem; margin-top: .7rem; flex-wrap: wrap; }
 .player-bar .btn { padding: .5rem .95rem; font-size: .86rem; }
 
-/* Points toast — shows the live scoring breakdown after each answer */
+/* Points toast — shows the live scoring breakdown after each answer. The
+   next question waits a moment (see ANSWER_PAUSE in quiz.js) so it stays
+   readable before the card is rebuilt. */
 .answer-toast {
   margin-top: 1rem;
   display: flex;
