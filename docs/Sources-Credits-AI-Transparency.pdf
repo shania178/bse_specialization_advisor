@@ -1,0 +1,459 @@
+%PDF-1.4
+%âãÏÓ
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [6 0 R 8 0 R 10 0 R 12 0 R 14 0 R 18 0 R 20 0 R] /Count 7 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique >>
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.276 841.89] /Contents 7 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Annots [] >>
+endobj
+7 0 obj
+<< /Length 4502 >>
+stream
+BT /F2 16 Tf 52.0 765.9 Td (BSE SPECIALISATION ADVISOR) Tj ET
+0.30 0.26 0.66 RG 52.0 748.7 m 543.3 748.7 l S
+BT /F2 13 Tf 52.0 733.2 Td (Project Documentation) Tj ET
+BT /F1 10.5 Tf 52.0 712.7 Td (Bibi Shania Tinkouree — BSc \(Hons\) Software Engineering, Year 1) Tj ET
+BT /F1 10.5 Tf 52.0 695.8 Td (Frontend Web Development — Summative Assessment \(June–October 2026\)) Tj ET
+BT /F2 12 Tf 52.0 666.9 Td (1. Project Overview) Tj ET
+0.30 0.26 0.66 RG 52.0 655.4 m 543.3 655.4 l S
+BT /F1 10.5 Tf 52.0 639.9 Td (The BSE Specialisation Advisor is a web application that helps Bachelor of Software) Tj ET
+BT /F1 10.5 Tf 52.0 624.9 Td (Engineering students discover which of the four BSE specialisation pathways —) Tj ET
+BT /F1 10.5 Tf 52.0 610.0 Td (Low-Level Programming, AR / VR, Full-Stack Web Development and Machine Learning —) Tj ET
+BT /F1 10.5 Tf 52.0 595.1 Td (best matches their strengths, interests and goals. The student completes a short) Tj ET
+BT /F1 10.5 Tf 52.0 580.2 Td (10-question quiz; every answer scores points towards one of the four categories; and) Tj ET
+BT /F1 10.5 Tf 52.0 565.3 Td (a personalised results page then shows the student's top specialisation, a full) Tj ET
+BT /F1 10.5 Tf 52.0 550.4 Td (category breakdown, an animated radar chart and next-step recommendations.) Tj ET
+BT /F1 10.5 Tf 52.0 531.5 Td (The project is a static multi-page site built entirely with HTML5, CSS3 and vanilla) Tj ET
+BT /F1 10.5 Tf 52.0 516.6 Td (JavaScript. It uses no frameworks, no build tools and no backend, so it runs directly) Tj ET
+BT /F1 10.5 Tf 52.0 501.7 Td (in any modern browser and can be hosted free on GitHub Pages. All data lives in the) Tj ET
+BT /F1 10.5 Tf 52.0 486.8 Td (browser's sessionStorage, which keeps the whole experience self-contained.) Tj ET
+BT /F1 10.5 Tf 52.0 469.8 Td (The site welcomes students from every intake level \(Year 1–3\). It uses an) Tj ET
+BT /F1 10.5 Tf 52.0 454.9 Td (institutional indigo and amber palette, a consistent layout across all four pages,) Tj ET
+BT /F1 10.5 Tf 52.0 440.0 Td (and keyboard-friendly interactions throughout.) Tj ET
+BT /F2 12 Tf 52.0 411.1 Td (2. Pages and Site Structure) Tj ET
+0.30 0.26 0.66 RG 52.0 399.6 m 543.3 399.6 l S
+BT /F1 10.5 Tf 52.0 384.1 Td (The site consists of four pages connected by a shared header navigation \(with an) Tj ET
+BT /F1 10.5 Tf 52.0 369.2 Td (active-page highlight and a mobile hamburger menu\) and a shared footer.) Tj ET
+BT /F1 10.5 Tf 80.0 354.3 Td (index.html — Home. The hero introduces the tool and the four pathways. Four) Tj ET
+BT /F1 10.5 Tf 80.0 339.3 Td (preview cards explain each specialisation, and a "Before we begin" form captures) Tj ET
+BT /F1 10.5 Tf 80.0 324.4 Td (the student's profile \(first name, last name, student ID, institutional email,) Tj ET
+BT /F1 10.5 Tf 80.0 309.5 Td (phone number and intake level\) with real-time validation before the quiz starts.) Tj ET
+BT /F1 9 Tf 58.0 354.3 Td (•) Tj ET
+BT /F1 10.5 Tf 80.0 294.6 Td (quiz.html — Quiz. Rebuilds one question card at a time from a data-driven question) Tj ET
+BT /F1 10.5 Tf 80.0 279.7 Td (set, with a progress bar, a question counter and a live 5-minute countdown.) Tj ET
+BT /F1 10.5 Tf 80.0 264.8 Td (Includes the three interactive media question types \(image hotspot, audio, video\).) Tj ET
+BT /F1 9 Tf 58.0 294.6 Td (•) Tj ET
+BT /F1 10.5 Tf 80.0 249.9 Td (results.html — Results. Reads the saved quiz payload and renders the personalised) Tj ET
+BT /F1 10.5 Tf 80.0 235.0 Td (outcome: a hero announcing the top specialisation, animated score bars, a) Tj ET
+BT /F1 10.5 Tf 80.0 220.1 Td (pure-Canvas radar chart, a ranked narrative and next-step recommendations, plus) Tj ET
+BT /F1 10.5 Tf 80.0 205.1 Td (actions to retake the quiz, contact the team or update details.) Tj ET
+BT /F1 9 Tf 58.0 249.9 Td (•) Tj ET
+BT /F1 10.5 Tf 80.0 190.2 Td (contact.html — Contact. A feedback form with an interactive star rating that) Tj ET
+BT /F1 10.5 Tf 80.0 175.3 Td (reuses the same live validation engine; on submit it shows an inline success) Tj ET
+BT /F1 10.5 Tf 80.0 160.4 Td (banner \(no server round trip\).) Tj ET
+BT /F1 9 Tf 58.0 190.2 Td (•) Tj ET
+BT /F2 12 Tf 52.0 131.5 Td (3. Quiz Content and Question Types) Tj ET
+0.30 0.26 0.66 RG 52.0 120.0 m 543.3 120.0 l S
+BT /F1 10.5 Tf 52.0 104.5 Td (The quiz asks 10 questions, each mapping to one specialisation. Seven are standard) Tj ET
+BT /F1 10.5 Tf 52.0 89.6 Td (multiple-choice questions and three are interactive media questions. The questions) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.276 841.89] /Contents 9 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Annots [] >>
+endobj
+9 0 obj
+<< /Length 4774 >>
+stream
+BT /F1 10.5 Tf 52.0 783.9 Td (are deliberately scenario-based — a free afternoon, a debugging instinct, a dream) Tj ET
+BT /F1 10.5 Tf 52.0 769.0 Td (project, a toolbox — so students answer from instinct rather than technical) Tj ET
+BT /F1 10.5 Tf 52.0 754.1 Td (knowledge.) Tj ET
+BT /F1 10.5 Tf 80.0 739.2 Td (Q1–Q4 \(choice\): free-afternoon preference, debugging instinct, dream final-year) Tj ET
+BT /F1 10.5 Tf 80.0 724.3 Td (project and first skill to sharpen.) Tj ET
+BT /F1 9 Tf 58.0 739.2 Td (•) Tj ET
+BT /F1 10.5 Tf 80.0 709.3 Td (Q5 \(image hotspot\): tap the piece of tech in the scene that calls to you.) Tj ET
+BT /F1 9 Tf 58.0 709.3 Td (•) Tj ET
+BT /F1 10.5 Tf 80.0 694.4 Td (Q6 \(audio\): listen to a clip with the custom player and pick the developer vibe it) Tj ET
+BT /F1 10.5 Tf 80.0 679.5 Td (sounds like.) Tj ET
+BT /F1 9 Tf 58.0 694.4 Td (•) Tj ET
+BT /F1 10.5 Tf 80.0 664.6 Td (Q7 \(video\): watch a startup demo that pauses at a key moment, then decide what to) Tj ET
+BT /F1 10.5 Tf 80.0 649.7 Td (debug first.) Tj ET
+BT /F1 9 Tf 58.0 664.6 Td (•) Tj ET
+BT /F1 10.5 Tf 80.0 634.8 Td (Q8–Q10 \(choice\): favourite toolbox, natural team role and dream product to ship.) Tj ET
+BT /F1 9 Tf 58.0 634.8 Td (•) Tj ET
+BT /F1 10.5 Tf 52.0 617.9 Td (Each question type renders its own interface, but they all feed the same scoring) Tj ET
+BT /F1 10.5 Tf 52.0 603.0 Td (engine, so the format does not change how results are computed.) Tj ET
+BT /F2 12 Tf 52.0 574.1 Td (4. Interactive Media Features) Tj ET
+0.30 0.26 0.66 RG 52.0 562.5 m 543.3 562.5 l S
+BT /F2 10.5 Tf 52.0 548.0 Td (Image hotspot \(Q5\)) Tj ET
+BT /F1 10.5 Tf 52.0 531.1 Td (The hotspot question shows an original hand-drawn SVG "tech hub" scene containing) Tj ET
+BT /F1 10.5 Tf 52.0 516.2 Td (four objects — a circuit board \(Low-Level\), a laptop with code \(Full-Stack Web\), a VR) Tj ET
+BT /F1 10.5 Tf 52.0 501.3 Td (headset \(AR/VR\) and a robot \(Machine Learning\). Each object is wrapped in a hotspot) Tj ET
+BT /F1 10.5 Tf 52.0 486.4 Td (region that records its category when selected.) Tj ET
+BT /F1 10.5 Tf 80.0 471.5 Td (Invisible 72 px hit circles make the whole object clickable, not just a small dot) Tj ET
+BT /F1 10.5 Tf 80.0 456.6 Td (or ring.) Tj ET
+BT /F1 9 Tf 58.0 471.5 Td (•) Tj ET
+BT /F1 10.5 Tf 80.0 441.7 Td (A dashed ring and core dot light up on hover and stay lit on selection; picking a) Tj ET
+BT /F1 10.5 Tf 80.0 426.7 Td (new region cleanly deselects the previous one.) Tj ET
+BT /F1 9 Tf 58.0 441.7 Td (•) Tj ET
+BT /F1 10.5 Tf 80.0 411.8 Td (Regions are keyboard-accessible \(Tab to focus, Enter or Space to select\) and carry) Tj ET
+BT /F1 10.5 Tf 80.0 396.9 Td (descriptive aria-labels.) Tj ET
+BT /F1 9 Tf 58.0 411.8 Td (•) Tj ET
+BT /F1 10.5 Tf 80.0 382.0 Td (A confirm button fades in once a region is chosen, shows the awarded points, and) Tj ET
+BT /F1 10.5 Tf 80.0 367.1 Td (then advances the quiz.) Tj ET
+BT /F1 9 Tf 58.0 382.0 Td (•) Tj ET
+BT /F2 10.5 Tf 52.0 349.2 Td (Audio question \(Q6\)) Tj ET
+BT /F1 10.5 Tf 52.0 332.3 Td (Plays assets/audio-prompt.wav through an HTML5 audio element driven by custom buttons) Tj ET
+BT /F1 10.5 Tf 52.0 317.4 Td (— Play/Pause and Replay — instead of the default controls. A status line reports) Tj ET
+BT /F1 10.5 Tf 52.0 302.5 Td (Ready to play / Playing / Paused / Finished, and when the clip ends the play button) Tj ET
+BT /F1 10.5 Tf 52.0 287.6 Td (changes to Replay.) Tj ET
+BT /F2 10.5 Tf 52.0 269.6 Td (Video question \(Q7\)) Tj ET
+BT /F1 10.5 Tf 52.0 252.7 Td (Plays the 12-second assets/video-scenario.webm clip. A timeupdate listener) Tj ET
+BT /F1 10.5 Tf 52.0 237.8 Td (auto-pauses the video at 5 seconds and reveals the decision panel with the four) Tj ET
+BT /F1 10.5 Tf 52.0 222.9 Td (options; a Resume button lets the student watch the rest before answering.) Tj ET
+BT /F2 12 Tf 52.0 194.0 Td (5. Scoring System) Tj ET
+0.30 0.26 0.66 RG 52.0 182.5 m 543.3 182.5 l S
+BT /F1 10.5 Tf 52.0 167.0 Td (Answers are scored into the four categories, and the winning specialisation is simply) Tj ET
+BT /F1 10.5 Tf 52.0 152.1 Td (the category with the highest total. The scoring combines base points, a speed bonus) Tj ET
+BT /F1 10.5 Tf 52.0 137.1 Td (and a streak multiplier so the result reflects both preference and consistency.) Tj ET
+BT /F1 10.5 Tf 80.0 122.2 Td (Base points: 10 points per answered question.) Tj ET
+BT /F1 9 Tf 58.0 122.2 Td (•) Tj ET
+BT /F1 10.5 Tf 80.0 107.3 Td (Speed bonus: +5 points when the answer is given within 8 seconds, +3 within 15) Tj ET
+BT /F1 10.5 Tf 80.0 92.4 Td (seconds, otherwise +1 — rewarding quick, instinctive choices.) Tj ET
+BT /F1 9 Tf 58.0 107.3 Td (•) Tj ET
+BT /F1 10.5 Tf 80.0 77.5 Td (Streak multiplier: consecutive answers in the same category grow a multiplier from) Tj ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.276 841.89] /Contents 11 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Annots [] >>
+endobj
+11 0 obj
+<< /Length 4879 >>
+stream
+BT /F1 10.5 Tf 80.0 783.9 Td (1.0× to a cap of 1.5× \(+0.1 per consecutive pick, capping after 6 in a row\) —) Tj ET
+BT /F1 10.5 Tf 80.0 769.0 Td (rewarding a strong, consistent preference.) Tj ET
+BT /F1 9 Tf 58.0 77.5 Td (•) Tj ET
+BT /F1 10.5 Tf 80.0 754.1 Td (Question points are computed as round\(\(10 + bonus\) × multiplier\).) Tj ET
+BT /F1 9 Tf 58.0 754.1 Td (•) Tj ET
+BT /F1 10.5 Tf 80.0 739.2 Td (After every answer a toast shows the breakdown — "+X pts • speed bonus +Y • streak) Tj ET
+BT /F1 10.5 Tf 80.0 724.3 Td (×Z" — for 3 seconds, then the quiz advances after a short 1.6-second pause.) Tj ET
+BT /F1 9 Tf 58.0 739.2 Td (•) Tj ET
+BT /F1 10.5 Tf 80.0 709.3 Td (Each answer is logged with its question number, type, category, bonus, multiplier) Tj ET
+BT /F1 10.5 Tf 80.0 694.4 Td (and points, and this log drives the results-page narrative.) Tj ET
+BT /F1 9 Tf 58.0 709.3 Td (•) Tj ET
+BT /F2 12 Tf 52.0 665.5 Td (6. Timer and Timeout Handling) Tj ET
+0.30 0.26 0.66 RG 52.0 654.0 m 543.3 654.0 l S
+BT /F1 10.5 Tf 52.0 638.5 Td (The quiz runs on a 5-minute \(300-second\) countdown driven by setInterval. Each tick) Tj ET
+BT /F1 10.5 Tf 52.0 623.6 Td (updates the on-screen time and the progress bar, so the student always knows how much) Tj ET
+BT /F1 10.5 Tf 52.0 608.7 Td (time is left.) Tj ET
+BT /F1 10.5 Tf 80.0 593.8 Td (With 30 seconds or less left, the timer badge turns red and pulses as a visual) Tj ET
+BT /F1 10.5 Tf 80.0 578.8 Td (warning.) Tj ET
+BT /F1 9 Tf 58.0 593.8 Td (•) Tj ET
+BT /F1 10.5 Tf 80.0 563.9 Td (If time expires, the quiz locks all controls \(pointer events disabled\), shows a) Tj ET
+BT /F1 10.5 Tf 80.0 549.0 Td ("Time's up!" overlay explaining that current answers were recorded, and after 1.4) Tj ET
+BT /F1 10.5 Tf 80.0 534.1 Td (seconds auto-submits and redirects to the results page.) Tj ET
+BT /F1 9 Tf 58.0 563.9 Td (•) Tj ET
+BT /F1 10.5 Tf 80.0 519.2 Td (The results page notes when a run timed out: "You ran out of time — answers) Tj ET
+BT /F1 10.5 Tf 80.0 504.3 Td (recorded up to the final question.") Tj ET
+BT /F1 9 Tf 58.0 519.2 Td (•) Tj ET
+BT /F2 12 Tf 52.0 475.4 Td (7. Data, State and Validation) Tj ET
+0.30 0.26 0.66 RG 52.0 463.8 m 543.3 463.8 l S
+BT /F2 10.5 Tf 52.0 449.3 Td (Student profile) Tj ET
+BT /F1 10.5 Tf 52.0 432.4 Td (The landing form saves the student profile to sessionStorage under the key) Tj ET
+BT /F1 10.5 Tf 52.0 417.5 Td (bse-student: first name, last name, a combined name, student ID, lowercased) Tj ET
+BT /F1 10.5 Tf 52.0 402.6 Td (institutional email, phone, intake level and a timestamp. The quiz reads the profile) Tj ET
+BT /F1 10.5 Tf 52.0 387.7 Td (to greet the student by name; if it is missing, the quiz politely blocks with a "Go) Tj ET
+BT /F1 10.5 Tf 52.0 372.8 Td (to home page" link instead of crashing.) Tj ET
+BT /F2 10.5 Tf 52.0 354.9 Td (Quiz results) Tj ET
+BT /F1 10.5 Tf 52.0 338.0 Td (On finishing, the quiz saves a bse-results payload \(scores, the per-question log,) Tj ET
+BT /F1 10.5 Tf 52.0 323.1 Td (time used, a timed-out flag, completion time and the student profile\) and navigates) Tj ET
+BT /F1 10.5 Tf 52.0 308.2 Td (to results.html. Opening results without data shows a friendly "No results yet" state) Tj ET
+BT /F1 10.5 Tf 52.0 293.2 Td (with a link to the quiz.) Tj ET
+BT /F1 10.5 Tf 52.0 276.3 Td (sessionStorage is used rather than localStorage deliberately, so a fresh browser) Tj ET
+BT /F1 10.5 Tf 52.0 261.4 Td (session always starts at the landing page and never shows stale results.) Tj ET
+BT /F2 10.5 Tf 52.0 243.5 Td (Validation engine \(js/shared.js\)) Tj ET
+BT /F1 10.5 Tf 52.0 226.6 Td (A single shared validation engine powers every form. Each field carries a) Tj ET
+BT /F1 10.5 Tf 52.0 211.7 Td (data-validate attribute; a central RULES object maps every field name to a regular) Tj ET
+BT /F1 10.5 Tf 52.0 196.8 Td (expression and an error message; input and blur listeners validate live; and one) Tj ET
+BT /F1 10.5 Tf 52.0 181.9 Td (render routine toggles the .is-valid / .is-invalid classes and shows an inline error) Tj ET
+BT /F1 10.5 Tf 52.0 167.0 Td (message. There are no alert\(\) popups anywhere.) Tj ET
+BT /F1 10.5 Tf 80.0 152.1 Td (Name: 2–50 letters only \(accents, spaces, apostrophes and hyphens allowed; no) Tj ET
+BT /F1 10.5 Tf 80.0 137.1 Td (double separators, numbers or symbols\).) Tj ET
+BT /F1 9 Tf 58.0 152.1 Td (•) Tj ET
+BT /F1 10.5 Tf 80.0 122.2 Td (Student ID: the BSE pattern — BSE followed by 4–6 digits \(e.g. BSE25013\).) Tj ET
+BT /F1 9 Tf 58.0 122.2 Td (•) Tj ET
+BT /F1 10.5 Tf 80.0 107.3 Td (Institutional email: local part with letters, digits and . _ - separators, on the) Tj ET
+BT /F1 10.5 Tf 80.0 92.4 Td (@alustudent.com domain \(e.g. student.id@alustudent.com\).) Tj ET
+BT /F1 9 Tf 58.0 107.3 Td (•) Tj ET
+BT /F1 10.5 Tf 80.0 77.5 Td (Phone: optional +230 country code plus 8 local digits starting with 2–9 \(e.g.) Tj ET
+endstream
+endobj
+12 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.276 841.89] /Contents 13 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Annots [] >>
+endobj
+13 0 obj
+<< /Length 4938 >>
+stream
+BT /F1 10.5 Tf 80.0 783.9 Td (+23058123456 or 58123456\).) Tj ET
+BT /F1 9 Tf 58.0 77.5 Td (•) Tj ET
+BT /F1 10.5 Tf 80.0 769.0 Td (Message \(contact page\): 20–1000 characters.) Tj ET
+BT /F1 9 Tf 58.0 769.0 Td (•) Tj ET
+BT /F1 10.5 Tf 80.0 754.1 Td (The intake-level dropdown uses a plain required check; if a submit is attempted) Tj ET
+BT /F1 10.5 Tf 80.0 739.2 Td (with errors, focus moves to the first invalid field.) Tj ET
+BT /F1 9 Tf 58.0 754.1 Td (•) Tj ET
+BT /F2 12 Tf 52.0 710.3 Td (8. Results Page Rendering) Tj ET
+0.30 0.26 0.66 RG 52.0 698.7 m 543.3 698.7 l S
+BT /F1 10.5 Tf 52.0 683.2 Td (The results page builds the entire view from the stored payload:) Tj ET
+BT /F1 10.5 Tf 80.0 668.3 Td (Ranking: the four categories are sorted by score; the hero announces the top) Tj ET
+BT /F1 10.5 Tf 80.0 653.4 Td (specialisation in its own colour, followed by the finishing time \(or a timeout) Tj ET
+BT /F1 10.5 Tf 80.0 638.5 Td (note\).) Tj ET
+BT /F1 9 Tf 58.0 668.3 Td (•) Tj ET
+BT /F1 10.5 Tf 80.0 623.6 Td (Score bars: each category fills from zero with a CSS width transition, and the) Tj ET
+BT /F1 10.5 Tf 80.0 608.7 Td (numbers count up with a requestAnimationFrame ease-out loop over about one second.) Tj ET
+BT /F1 9 Tf 58.0 623.6 Td (•) Tj ET
+BT /F1 10.5 Tf 80.0 593.8 Td (Narrative: every category gets a personalised description plus rank-based copy) Tj ET
+BT /F1 10.5 Tf 80.0 578.8 Td (\(“Your strongest signal…”, “A very close second…”, etc.\).) Tj ET
+BT /F1 9 Tf 58.0 593.8 Td (•) Tj ET
+BT /F1 10.5 Tf 80.0 563.9 Td (Recommendations: the top two pathways get next-step action cards with module) Tj ET
+BT /F1 10.5 Tf 80.0 549.0 Td (suggestions, activities and target roles.) Tj ET
+BT /F1 9 Tf 58.0 563.9 Td (•) Tj ET
+BT /F1 10.5 Tf 80.0 534.1 Td (Radar chart: a spider chart drawn with the raw Canvas 2D API — no charting) Tj ET
+BT /F1 10.5 Tf 80.0 519.2 Td (library. It scales by devicePixelRatio for crisp text, draws concentric grid rings) Tj ET
+BT /F1 10.5 Tf 80.0 504.3 Td (at 25/50/75/100%, axis spokes, a data polygon filled with a gradient tinted from) Tj ET
+BT /F1 10.5 Tf 80.0 489.4 Td (the winning colour, vertex dots, and labels that flip upright in the lower half. A) Tj ET
+BT /F1 10.5 Tf 80.0 474.5 Td (requestAnimationFrame sweep reveals the polygon over 1.2 seconds.) Tj ET
+BT /F1 9 Tf 58.0 534.1 Td (•) Tj ET
+BT /F1 10.5 Tf 80.0 459.6 Td (Confetti: when the chart completes, roughly 70 particles burst from the winning) Tj ET
+BT /F1 10.5 Tf 80.0 444.7 Td (axis with randomised velocities, sizes and spin, fall under gravity, and fade out) Tj ET
+BT /F1 10.5 Tf 80.0 429.7 Td (over about 3 seconds.) Tj ET
+BT /F1 9 Tf 58.0 459.6 Td (•) Tj ET
+BT /F2 12 Tf 52.0 400.8 Td (9. Design and Styling) Tj ET
+0.30 0.26 0.66 RG 52.0 389.3 m 543.3 389.3 l S
+BT /F1 10.5 Tf 52.0 373.8 Td (The visual style is defined by CSS custom properties in css/style.css, kept in one) Tj ET
+BT /F1 10.5 Tf 52.0 358.9 Td (place so colours, radii and shadows stay consistent across pages.) Tj ET
+BT /F1 10.5 Tf 80.0 344.0 Td (Institutional indigo primary \(#2743a8\) with a darker hover shade and a pale tint,) Tj ET
+BT /F1 10.5 Tf 80.0 329.1 Td (plus a warm amber accent \(#f59e0b\).) Tj ET
+BT /F1 9 Tf 58.0 344.0 Td (•) Tj ET
+BT /F1 10.5 Tf 80.0 314.2 Td (Four category colours — Low-Level #f59e0b, AR/VR #8b5cf6, Full-Stack Web #0ea5e9,) Tj ET
+BT /F1 10.5 Tf 80.0 299.2 Td (Machine Learning #10b981 — reused across the home cards, the quiz hotspots, the) Tj ET
+BT /F1 10.5 Tf 80.0 284.3 Td (score bars, the radar chart and the narrative.) Tj ET
+BT /F1 9 Tf 58.0 314.2 Td (•) Tj ET
+BT /F1 10.5 Tf 80.0 269.4 Td (Neutral surface/ink/muted/line palette, 10–14 px corner radii, a small shadow) Tj ET
+BT /F1 10.5 Tf 80.0 254.5 Td (scale and one shared .22s cubic-bezier motion curve for smooth transitions.) Tj ET
+BT /F1 9 Tf 58.0 269.4 Td (•) Tj ET
+BT /F1 10.5 Tf 80.0 239.6 Td (Typography uses the system font stack \(Segoe UI, system-ui, …\), so no webfont is) Tj ET
+BT /F1 10.5 Tf 80.0 224.7 Td (loaded.) Tj ET
+BT /F1 9 Tf 58.0 239.6 Td (•) Tj ET
+BT /F1 10.5 Tf 80.0 209.8 Td (Layout is responsive with breakpoints at 860 px and 600 px; the header collapses) Tj ET
+BT /F1 10.5 Tf 80.0 194.9 Td (into a hamburger menu and card grids reflow into single columns.) Tj ET
+BT /F1 9 Tf 58.0 209.8 Td (•) Tj ET
+BT /F1 10.5 Tf 80.0 180.0 Td (Icons and the logo are inline SVGs \(a compass inside a chip\), so no external icon) Tj ET
+BT /F1 10.5 Tf 80.0 165.1 Td (font is required.) Tj ET
+BT /F1 9 Tf 58.0 180.0 Td (•) Tj ET
+BT /F2 12 Tf 52.0 136.1 Td (10. Accessibility) Tj ET
+0.30 0.26 0.66 RG 52.0 124.6 m 543.3 124.6 l S
+BT /F1 10.5 Tf 80.0 113.1 Td (Semantic landmarks \(header, main, footer\), real <button> and <label> elements, and) Tj ET
+BT /F1 10.5 Tf 80.0 98.2 Td (aria-live regions for the question card, the timer and the inline validation) Tj ET
+BT /F1 10.5 Tf 80.0 83.3 Td (messages.) Tj ET
+BT /F1 9 Tf 58.0 113.1 Td (•) Tj ET
+endstream
+endobj
+14 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.276 841.89] /Contents 15 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Annots [16 0 R 17 0 R] >>
+endobj
+15 0 obj
+<< /Length 4494 >>
+stream
+BT /F1 10.5 Tf 80.0 783.9 Td (The quiz progress bar is exposed with role="progressbar".) Tj ET
+BT /F1 9 Tf 58.0 68.4 Td (•) Tj ET
+BT /F1 10.5 Tf 80.0 769.0 Td (Hotspot regions are focusable, answer on Enter or Space, and carry descriptive) Tj ET
+BT /F1 10.5 Tf 80.0 754.1 Td (aria-labels; the star rating is fully controllable with the Left and Right arrow) Tj ET
+BT /F1 10.5 Tf 80.0 739.2 Td (keys.) Tj ET
+BT /F1 9 Tf 58.0 769.0 Td (•) Tj ET
+BT /F1 10.5 Tf 80.0 724.3 Td (Visible focus rings everywhere, including on the hotspot hit areas; decorative) Tj ET
+BT /F1 10.5 Tf 80.0 709.3 Td (icons are marked aria-hidden.) Tj ET
+BT /F1 9 Tf 58.0 724.3 Td (•) Tj ET
+BT /F1 10.5 Tf 80.0 694.4 Td (Colour choices keep text readable on the pale background, and on an invalid submit) Tj ET
+BT /F1 10.5 Tf 80.0 679.5 Td (the browser focus jumps to the first offending field.) Tj ET
+BT /F1 9 Tf 58.0 694.4 Td (•) Tj ET
+BT /F2 12 Tf 52.0 650.6 Td (11. Testing) Tj ET
+0.30 0.26 0.66 RG 52.0 639.1 m 543.3 639.1 l S
+BT /F1 10.5 Tf 52.0 623.6 Td (The application was tested manually in the browser and with an automated integration) Tj ET
+BT /F1 10.5 Tf 52.0 608.7 Td (suite.) Tj ET
+BT /F1 10.5 Tf 80.0 593.8 Td (Manual testing: every question type, the timer and timeout flow, the validation) Tj ET
+BT /F1 10.5 Tf 80.0 578.8 Td (states and the results page were exercised in a real browser across the responsive) Tj ET
+BT /F1 10.5 Tf 80.0 563.9 Td (breakpoints.) Tj ET
+BT /F1 9 Tf 58.0 593.8 Td (•) Tj ET
+BT /F1 10.5 Tf 80.0 549.0 Td (Automated testing: a Node.js + jsdom harness loads the real HTML and JavaScript) Tj ET
+BT /F1 10.5 Tf 80.0 534.1 Td (and verifies the validation engine \(every regex rule\), the quiz flow \(answering,) Tj ET
+BT /F1 10.5 Tf 80.0 519.2 Td (scoring, bonuses, multipliers, timeout handling\), hotspot selection and the) Tj ET
+BT /F1 10.5 Tf 80.0 504.3 Td (results renderer. The main suite runs 32 assertions and the hotspot suite 19 — all) Tj ET
+BT /F1 10.5 Tf 80.0 489.4 Td (passing.) Tj ET
+BT /F1 9 Tf 58.0 549.0 Td (•) Tj ET
+BT /F1 10.5 Tf 80.0 474.5 Td (Bugs found and fixed through testing: \(1\) selecting a new hotspot left the) Tj ET
+BT /F1 10.5 Tf 80.0 459.6 Td (previous one highlighted — the deselection loop queried the template fragment) Tj ET
+BT /F1 10.5 Tf 80.0 444.7 Td (after it had been appended; fixed by snapshotting the regions before insertion.) Tj ET
+BT /F1 10.5 Tf 80.0 429.7 Td (\(2\) The points toast was invisible because it was removed after 500 ms; fixed by) Tj ET
+BT /F1 10.5 Tf 80.0 414.8 Td (rendering it inside the card with a longer advance pause. \(3\) Hotspot click) Tj ET
+BT /F1 10.5 Tf 80.0 399.9 Td (targets were tiny — only the ring stroke was clickable; fixed with 72 px invisible) Tj ET
+BT /F1 10.5 Tf 80.0 385.0 Td (hit circles plus a visible focus ring.) Tj ET
+BT /F1 9 Tf 58.0 474.5 Td (•) Tj ET
+BT /F2 12 Tf 52.0 356.1 Td (12. Deployment) Tj ET
+0.30 0.26 0.66 RG 52.0 344.6 m 543.3 344.6 l S
+BT /F1 10.5 Tf 52.0 329.1 Td (Because the site is a collection of static files, deployment is simply a matter of) Tj ET
+BT /F1 10.5 Tf 52.0 314.2 Td (publishing the repository to GitHub Pages — no build step and no server) Tj ET
+BT /F1 10.5 Tf 52.0 299.2 Td (configuration.) Tj ET
+BT /F1 10.5 Tf 80.0 284.3 Td (The repository was made public on GitHub.) Tj ET
+BT /F1 9 Tf 58.0 284.3 Td (•) Tj ET
+BT /F1 10.5 Tf 80.0 269.4 Td (GitHub Pages was enabled from Settings > Pages > Deploy from a branch \(main /) Tj ET
+BT /F1 10.5 Tf 80.0 254.5 Td (root\).) Tj ET
+BT /F1 9 Tf 58.0 269.4 Td (•) Tj ET
+BT /F1 10.5 Tf 80.0 239.6 Td (The deployed site behaves identically to the local copy since there is no backend.) Tj ET
+BT /F1 9 Tf 58.0 239.6 Td (•) Tj ET
+BT /F2 10.5 Tf 52.0 220.7 Td (Repository) Tj ET
+BT /F1 10.5 Tf 52.0 205.8 Td (GitHub repository: https://github.com/shania178/bse_specialization_advisor) Tj ET
+BT /F2 10.5 Tf 52.0 188.9 Td (Live application) Tj ET
+BT /F1 10.5 Tf 52.0 174.0 Td (GitHub Pages: https://shania178.github.io/bse_specialization_advisor/) Tj ET
+BT /F2 12 Tf 52.0 145.1 Td (13. Media Asset Attributions) Tj ET
+0.30 0.26 0.66 RG 52.0 133.5 m 543.3 133.5 l S
+BT /F1 10.5 Tf 52.0 118.0 Td (All media assets used in this project were generated programmatically for the) Tj ET
+BT /F1 10.5 Tf 52.0 103.1 Td (assignment and are free of third-party copyright. No external images, icons, audio or) Tj ET
+BT /F1 10.5 Tf 52.0 88.2 Td (video were used; the SVG hotspot scene on the quiz page is original vector artwork.) Tj ET
+endstream
+endobj
+16 0 obj
+<< /Type /Annot /Subtype /Link /Rect [161.7 625.6 479.4 639.3] /A << /Type /Action /S /URI /URI (https://github.com/shania178/bse_specialization_advisor) >> >>
+endobj
+17 0 obj
+<< /Type /Annot /Subtype /Link /Rect [132.9 657.4 450.5 671.1] /A << /Type /Action /S /URI /URI (https://shania178.github.io/bse_specialization_advisor/) >> >>
+endobj
+18 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.276 841.89] /Contents 19 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Annots [] >>
+endobj
+19 0 obj
+<< /Length 4907 >>
+stream
+BT /F1 10.5 Tf 80.0 783.9 Td (assets/audio-prompt.wav — original retro-tech audio clip synthesised with a Python) Tj ET
+BT /F1 10.5 Tf 80.0 769.0 Td (script using only the standard library wave module \(square and sine tone) Tj ET
+BT /F1 10.5 Tf 80.0 754.1 Td (synthesis\).) Tj ET
+BT /F1 9 Tf 58.0 73.3 Td (•) Tj ET
+BT /F1 10.5 Tf 80.0 739.2 Td (assets/video-scenario.webm — original 12-second scenario clip rendered with) Tj ET
+BT /F1 10.5 Tf 80.0 724.3 Td (GStreamer \(videotestsrc ball pattern + text overlay\), encoded as VP8 video with) Tj ET
+BT /F1 10.5 Tf 80.0 709.3 Td (Opus audio and muxed into WebM.) Tj ET
+BT /F1 9 Tf 58.0 739.2 Td (•) Tj ET
+BT /F2 12 Tf 52.0 680.4 Td (14. AI Usage Disclosure) Tj ET
+0.30 0.26 0.66 RG 52.0 668.9 m 543.3 668.9 l S
+BT /F2 10.5 Tf 52.0 652.4 Td (14.1 How I used AI) Tj ET
+BT /F1 10.5 Tf 52.0 631.5 Td (In line with the assessment brief, I used generative AI tools as a supplementary) Tj ET
+BT /F1 10.5 Tf 52.0 616.6 Td (learning aid during development, and I am disclosing that use here. I did not ask the) Tj ET
+BT /F1 10.5 Tf 52.0 601.7 Td (AI to build the project for me: the site structure, the quiz content, the design and) Tj ET
+BT /F1 10.5 Tf 52.0 586.8 Td (the layout are my own work. I used AI mainly for the more complex and specialised) Tj ET
+BT /F1 10.5 Tf 52.0 571.8 Td (parts of the code, to check my approach, to understand a technique, or to help me get) Tj ET
+BT /F1 10.5 Tf 52.0 556.9 Td (unstuck on a bug. For each AI-assisted piece I followed the same process: I explained) Tj ET
+BT /F1 10.5 Tf 52.0 542.0 Td (what I wanted to achieve, read and understood the code I received, integrated it into) Tj ET
+BT /F1 10.5 Tf 52.0 527.1 Td (my project, and then tested it in the browser to make sure it worked. When I found a) Tj ET
+BT /F1 10.5 Tf 52.0 512.2 Td (problem, I went back to the AI for help and re-tested until it was correct.) Tj ET
+BT /F2 10.5 Tf 52.0 492.3 Td (14.2 Where AI helped me in the project) Tj ET
+BT /F1 10.5 Tf 80.0 477.4 Td (Image hotspot question — AI helped me set up the SVG overlay and the invisible hit) Tj ET
+BT /F1 10.5 Tf 80.0 462.5 Td (areas that make each object in the scene clickable, and to debug why clicking a) Tj ET
+BT /F1 10.5 Tf 80.0 447.6 Td (new hotspot left the previous one still selected.) Tj ET
+BT /F1 9 Tf 58.0 477.4 Td (•) Tj ET
+BT /F1 10.5 Tf 80.0 432.7 Td (Audio question — AI helped me wire the HTML5 audio element into custom play, pause) Tj ET
+BT /F1 10.5 Tf 80.0 417.7 Td (and replay buttons with a progress display instead of the default controls.) Tj ET
+BT /F1 9 Tf 58.0 432.7 Td (•) Tj ET
+BT /F1 10.5 Tf 80.0 402.8 Td (Video question — AI helped me implement the listener that pauses the video at the) Tj ET
+BT /F1 10.5 Tf 80.0 387.9 Td (right moment and reveals the decision panel.) Tj ET
+BT /F1 9 Tf 58.0 402.8 Td (•) Tj ET
+BT /F1 10.5 Tf 80.0 373.0 Td (Countdown timer — AI helped me build the setInterval/clearInterval countdown, the) Tj ET
+BT /F1 10.5 Tf 80.0 358.1 Td (low-time warning, the lock screen and the automatic submit when time runs out.) Tj ET
+BT /F1 9 Tf 58.0 373.0 Td (•) Tj ET
+BT /F1 10.5 Tf 80.0 343.2 Td (Scoring — AI helped me add speed bonuses and a streak multiplier to the) Tj ET
+BT /F1 10.5 Tf 80.0 328.3 Td (multi-category scoring and show a points breakdown after each answer.) Tj ET
+BT /F1 9 Tf 58.0 343.2 Td (•) Tj ET
+BT /F1 10.5 Tf 80.0 313.4 Td (Results page — AI helped me draw the radar chart with plain Canvas 2D \(no charting) Tj ET
+BT /F1 10.5 Tf 80.0 298.5 Td (library\) and build the confetti animation.) Tj ET
+BT /F1 9 Tf 58.0 313.4 Td (•) Tj ET
+BT /F1 10.5 Tf 80.0 283.6 Td (Validation — AI helped me work out the regular expressions for the institutional) Tj ET
+BT /F1 10.5 Tf 80.0 268.6 Td (email, phone number, student ID and name fields.) Tj ET
+BT /F1 9 Tf 58.0 283.6 Td (•) Tj ET
+BT /F1 10.5 Tf 80.0 253.7 Td (Media assets — AI helped me write the scripts that generated the audio and video) Tj ET
+BT /F1 10.5 Tf 80.0 238.8 Td (files \(a Python script for the WAV clip and a GStreamer command for the scenario) Tj ET
+BT /F1 10.5 Tf 80.0 223.9 Td (video\).) Tj ET
+BT /F1 9 Tf 58.0 253.7 Td (•) Tj ET
+BT /F2 10.5 Tf 52.0 204.0 Td (14.3 Verification) Tj ET
+BT /F1 10.5 Tf 52.0 187.1 Td (Every AI-assisted piece of code was reviewed, tested and understood before I included) Tj ET
+BT /F1 10.5 Tf 52.0 172.2 Td (it. I ran the site at each step and used automated integration tests to check the) Tj ET
+BT /F1 10.5 Tf 52.0 157.3 Td (whole quiz flow end to end. Bugs I found during testing — such as the hotspot) Tj ET
+BT /F1 10.5 Tf 52.0 142.4 Td (multi-selection issue and a toast message that was not visible — were fixed and) Tj ET
+BT /F1 10.5 Tf 52.0 127.5 Td (re-tested. The final decisions on design, content and code remain my own, and I am) Tj ET
+BT /F1 10.5 Tf 52.0 112.5 Td (able to explain how every component of this project works.) Tj ET
+endstream
+endobj
+20 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.276 841.89] /Contents 21 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Annots [] >>
+endobj
+21 0 obj
+<< /Length 1563 >>
+stream
+BT /F2 12 Tf 52.0 777.9 Td (15. References \(APA 7th Edition\)) Tj ET
+0.30 0.26 0.66 RG 52.0 766.4 m 543.3 766.4 l S
+BT /F1 9.5 Tf 80.0 754.9 Td (opencode. \(2026\). opencode AI coding assistant [Computer software]. https://opencode.ai) Tj ET
+BT /F1 9 Tf 58.0 754.9 Td (•) Tj ET
+BT /F1 9.5 Tf 80.0 741.4 Td (GitHub. \(n.d.\). GitHub Pages. https://docs.github.com/en/pages) Tj ET
+BT /F1 9 Tf 58.0 741.4 Td (•) Tj ET
+BT /F1 9.5 Tf 80.0 727.9 Td (GStreamer Project. \(n.d.\). GStreamer: open source multimedia framework.) Tj ET
+BT /F1 9.5 Tf 80.0 714.4 Td (https://gstreamer.freedesktop.org/) Tj ET
+BT /F1 9 Tf 58.0 727.9 Td (•) Tj ET
+BT /F1 9.5 Tf 80.0 700.9 Td (MDN Web Docs. \(n.d.\). Canvas API.) Tj ET
+BT /F1 9.5 Tf 80.0 687.4 Td (https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API) Tj ET
+BT /F1 9 Tf 58.0 700.9 Td (•) Tj ET
+BT /F1 9.5 Tf 80.0 673.9 Td (MDN Web Docs. \(n.d.\). HTMLMediaElement: timeupdate event.) Tj ET
+BT /F1 9.5 Tf 80.0 660.4 Td (https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/timeupdate_event) Tj ET
+BT /F1 9 Tf 58.0 673.9 Td (•) Tj ET
+BT /F1 9.5 Tf 80.0 646.9 Td (MDN Web Docs. \(n.d.\). JavaScript guide: regular expressions.) Tj ET
+BT /F1 9.5 Tf 80.0 633.4 Td (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) Tj ET
+BT /F1 9 Tf 58.0 646.9 Td (•) Tj ET
+BT /F1 9.5 Tf 80.0 619.9 Td (Python Software Foundation. \(n.d.\). wave — read and write WAV files.) Tj ET
+BT /F1 9.5 Tf 80.0 606.5 Td (https://docs.python.org/3/library/wave.html) Tj ET
+BT /F1 9 Tf 58.0 619.9 Td (•) Tj ET
+endstream
+endobj
+xref
+0 22
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000162 00000 n 
+0000000232 00000 n 
+0000000307 00000 n 
+0000000385 00000 n 
+0000000549 00000 n 
+0000005103 00000 n 
+0000005267 00000 n 
+0000010093 00000 n 
+0000010259 00000 n 
+0000015191 00000 n 
+0000015357 00000 n 
+0000020348 00000 n 
+0000020527 00000 n 
+0000025074 00000 n 
+0000025250 00000 n 
+0000025426 00000 n 
+0000025592 00000 n 
+0000030552 00000 n 
+0000030718 00000 n 
+trailer << /Size 22 /Root 1 0 R >>
+startxref
+32334
+%%EOF
